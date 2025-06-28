@@ -1,12 +1,25 @@
 const express = require('express');
-const app = express();
-const PORT = process.env.PORT || 3000;
+const path = require('path');
 
-// Serve static files
+const app = express();
+const PORT = 3000;
+
+// Serve static files in the 'public' folder
 app.use(express.static('public'));
 
-app.get('/', (req, res) => res.sendFile(__dirname + '/public/index.html'));
-// app.get('/about', (req, res) => res.sendFile(__dirname + '/public/about.html'));
-// app.get('/contact', (req, res) => res.sendFile(__dirname + '/public/contact.html'));
+// If you want to handle specific routes explicitly:
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
-app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
+// app.get('/about', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'public', 'about.html'));
+// });
+
+// app.get('/contact', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'public', 'contact.html'));
+// });
+
+app.listen(PORT, () => {
+  console.log(`Server running at http://localhost:${PORT}`);
+});
