@@ -1,0 +1,252 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin-top: 80px;
+}
+
+html{
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0 78px;
+  transition: all 0.8s ease;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: all 0.8s ease;
+}
+
+
+
+.links ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  background-color: #222;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+
+.links ul li {
+  margin-right: 35px;
+  padding: 14px 20px;
+  justify-content: center;
+  transition: all 0.8s ease;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: #fff;
+  /* Dark gray for links */
+  font-weight: 300;
+  font-size: 16px;
+  padding: 4px 0;
+  transition: border-bottom 0.8s ease;
+
+}
+
+.links ul li a:hover {
+  color: rgb(255, 128, 0);
+  border-bottom: 4px solid rgb(255, 128, 0);
+}
+
+.logo h1 {
+  background-color: #000000;
+  padding: 5px 24px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.logo h1 span {
+  color: rgb(255, 128, 0);
+  font-weight: bold;
+  font-size: 28px;
+  margin-right: 4px;
+}
+
+.checkit button {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+header.scrolled {
+  background: rgba(195, 193, 193, 0.319); 
+  backdrop-filter: blur(10px);          
+  -webkit-backdrop-filter: blur(10px);  
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  border-radius: 15px;  
+  width: fit-content;
+  padding: 0 30px;
+  height: 50px;
+}
+
+header.scrolled .links ul {
+  background-color: transparent;
+  margin-right: 24px;
+}
+
+header.scrolled .links ul li a {
+  color: #000000;
+}
+
+.logo.scrolled h1 {
+  background-color: transparent;
+  color: #000000;
+  padding: 0;
+}
+
+
+footer {
+  background-color: #222;
+  padding: 30px 58px;
+
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+footer h1 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.contact ul,
+.legals ul,
+.service ul {
+  display: flex;
+  list-style: none;
+  align-items: start;
+  margin-left: -40px;
+
+}
+
+.legals ul,
+.service ul {
+  flex-direction: column;
+}
+
+.contact ul li,
+.legals ul li,
+.service ul li {
+  padding: 2px 0;
+}
+
+.contact ul li a,
+.legals ul li a,
+.service ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  word-spacing: 2px;
+}
+
+.contact ul li {
+  margin-right: 20px;
+
+}
+
+.contact ul li img {
+  height: 34px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info a {
+  padding-right: 20px;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+
+
+}
+
+.contact-info a img {
+  height: 20px;
+  margin-right: 10px;
+
+}
+
+.contact h2 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.contact {
+  width: 40%;
+}
+
+.subscribe input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 73%;
+  margin-right: 10px;
+
+}
+
+.subscribe button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 128, 0);
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.copyright a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+main {
+  height: 2000px;
+  background-color: #ffe331;
+}
